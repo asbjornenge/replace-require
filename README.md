@@ -2,6 +2,8 @@
 
 Replace require statements.
 
+Heavily inspired by [transform-deps](https://github.com/tetsuo/transform-deps). Allows replacement of the whole require statement.
+
 ## Install
 
 ```sh
