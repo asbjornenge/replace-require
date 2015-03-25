@@ -20,3 +20,10 @@ it('can replace a require statement with anything', () => {
     assert(__src.indexOf("var image = \"base64\"") >= 0)
     assert(__src.indexOf("var style = \"body { color : red; }\"") >= 0)
 })
+
+it('works with the readme example', () => {
+    let __src = rr("require('foo');require('bar')", (target) => {
+        if (target.indexOf('foo') >= 0) return "require('baz')"
+    })
+    assert(__src == "require('baz');require('bar')")
+})
