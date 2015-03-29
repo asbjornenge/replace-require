@@ -1,7 +1,7 @@
 module.exports = replaceRequire;
 
 var acorn = require('acorn');
-var walk  = require('acorn/util/walk');
+var walk  = require('acorn/dist/walk');
 
 function replaceRequire(src, fn) {
   var ret = src;

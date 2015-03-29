@@ -23,6 +23,10 @@ console.log(src)
 
 ## Changelog
 
+### 1.1.0
+
+* Updated acorn
+
 ### 1.0.0
 
 * Initial release :tada:
